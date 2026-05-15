@@ -3,7 +3,9 @@ const PRIMARY_FOREGROUND_COLOR = "rgba(255, 255, 255, 0.86)"
 const TITLE_COLOR = "#313131"
 const SUBTITLE_COLOR = "rgb(90, 90, 90)"
 const SUBTITLE_COLOR_AVATAR = "#ece9e9"
+const ERROR_COLOR = "#ff0000"
 const TEXT_SHADOWCOLOR = "rgba(161, 161, 161, 0.6)"
+const CARD_COLOR_BABY_BLUE = "rgb(126, 218, 218)"
 const BORDER_RADIUS_MD = 60
 const BORDER_RADIUS_LG = 240
 
@@ -14,7 +16,9 @@ export const THEMES = {
         subtitle: SUBTITLE_COLOR,
         text_shadow: TEXT_SHADOWCOLOR,
         title: TITLE_COLOR,
-        subtitle_avatar: SUBTITLE_COLOR_AVATAR
+        subtitle_avatar: SUBTITLE_COLOR_AVATAR,
+        error: ERROR_COLOR,
+        card_color_bb: CARD_COLOR_BABY_BLUE
     },
     border:{
         radius: {
