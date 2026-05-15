@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
         borderColor: THEMES.colors.text_shadow,
         paddingHorizontal: 16,
         color: THEMES.colors.subtitle,
-        fontWeight: "600"
+        fontWeight: "600",
     },
 
     formError:{

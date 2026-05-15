@@ -44,8 +44,9 @@ export const styles = StyleSheet.create({
     cardText:{
         color: THEMES.colors.primary_foreground,
         fontSize: THEMES.text.heading.h5,
-        padding: 9,
-        textAlign: "center"
+        padding: 1,
+        textAlign: "center",
+        fontWeight: "bold"
     },
 
     cardSubtitle:{
@@ -77,6 +78,6 @@ export const styles = StyleSheet.create({
     cardTextGroup:{
         justifyContent: "center",
         alignItems: "center",
-        gap: 8
+        gap: 4
     }
 })

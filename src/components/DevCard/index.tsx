@@ -1,21 +1,26 @@
 import { Text, View } from "react-native";
 import { styles } from "./styles";
+import { Form } from "../../app/cadastro";
 
-export function DevCard() {
+type Props = {
+    data: Form
+}
+
+export function DevCard({ data }: Props) {
     return (
-        <View style={styles.cardContainer}>
+        <View style={[styles.cardContainer, {backgroundColor: data.cardColor}]}>
             <View style={styles.cardAvatarContainer}>
                 <View style={styles.cardAvatarSubContainer}>
-                    <Text style={styles.cardAvatarLetter}>C</Text>
+                    <Text style={styles.cardAvatarLetter}>{data.fullName.charAt(0)}</Text>
                 </View>
             </View>
 
             <View style={styles.cardTextGroup}>
-                <Text style={styles.cardTitle}>Clara Freitas</Text>
+                <Text style={styles.cardTitle}>{data.fullName}</Text>
 
                 <View style={styles.cardTextGroup}>
-                    <Text style={styles.cardText}>Estudante de Engenharia de Software</Text>
-                    <Text style={styles.cardSubtitle}>Centro Universitário - UNIVAG</Text>
+                    <Text style={styles.cardText}>{data.role}</Text>
+                    <Text style={styles.cardSubtitle}>{data.company}</Text>
                 </View>
             </View>
 
@@ -23,14 +28,15 @@ export function DevCard() {
             <View style={styles.cardSeparator} />
 
             <View style={styles.cardTextGroup}>
-                <Text style={styles.cardSubtitle}>Sem especialidade</Text>
+                <Text style={styles.cardText}>Especialista em</Text>
+                <Text style={styles.cardSubtitle}>{data.favoriteStack}</Text>
             </View>
 
             <View style={[styles.cardBadgeContainer, { marginTop: 8 }]}>
-                <Text style={styles.cardBadgeText}>Estudante</Text>
+                <Text style={styles.cardBadgeText}>Pleno</Text>
             </View>
 
-            <Text style={styles.cardSubtitle}>1 ano cursando</Text>
+            <Text style={styles.cardSubtitle}>{data.experience} anos de experiêcia</Text>
         </View>
 
     )

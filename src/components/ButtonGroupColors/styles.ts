@@ -21,7 +21,6 @@ export const styles = StyleSheet.create({
     },
 
     buttonGroupButtonColorIndicator:{
-        backgroundColor: THEMES.colors.card_color_bb,
         width: 24,
         height: 24,
         borderRadius: "100%"
