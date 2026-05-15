@@ -11,7 +11,7 @@ export default function HomeScreen(){
                     <Text style={styles.logo}>DevCard</Text>
                     <Text style={styles.subtitle}>Seu cartão de visita digital de dev mobile</Text>
                 </View>       
-                <Button label="Criar meu cartão" />
+                <Button label="Criar meu cartão" variant="primary" />
             </View>
        </SafeAreaView>
     )
@@ -50,21 +50,4 @@ const styles = StyleSheet.create({
         textAlign: "center",
     },
 
-    buttonContainer:{
-        backgroundColor: THEMES.colors.primary,
-        flexDirection: "row",
-        justifyContent: "center",
-        alignContent:"center",
-        paddingHorizontal: 16,
-        paddingVertical: 20,
-        borderRadius: THEMES.border.radius.md,
-        elevation: 5,
-        shadowOffset: {width: 0, height: 4},
-    },
-
-    buttonText:{
-        color: THEMES.colors.primary_foreground,
-        fontWeight: "800",
-        fontSize: 22,
-    }
 })
